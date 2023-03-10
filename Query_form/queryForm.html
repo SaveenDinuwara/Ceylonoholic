@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="queryForm.css" />
+    <link rel="stylesheet" href="navigation_style.css" />
+    <link rel="stylesheet" href="footer.css">
+  </head>
+  <body>
+    <!------------------------Navigation------------------>
+    <div class="navbar">
+      <!----Logo--->
+      <div class="nav_logo">
+        <a href="../Home_page/main.html">
+          <img src="imgs/logo.png" alt="logo" />
+        </a>
+      </div>
+      <!----Menu items-->
+      <div class="nav_select">
+        <ul class="nav_items">
+          <li><a href="../Home_page/main.html">Home</a></li>
+          <li><a href="../Quiz/startquiz.html">Quiz</a></li>
+          <li><a href="../store_page/store_page.html">Store</a></li>
+          <li><a href="../presentation_page/presentation_page.html">Presentation</a></li>
+          <li><a href="../Site_Map/Site_Map.html">Sitemap</a></li>
+          <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+          <li><a href="../Aboutus/aboutus.html">About us</a></li>
+          <li class="nav_btn"><a href="../Query_form/queryForm.html">Contact</a></li>
+      </ul>
+      </div>
+    </div>
+
+    <!--------------Query section--------------->
+    <div class="query_container">
+      <div class="form_content">
+        <div class="column1">
+          <img src="imgs/form_img1.jpg" id="form_img" alt="form img" />
+        </div>
+        <div class="column2">
+          <div class="form_title">
+            <h3>Contact Us</h3>
+          </div>
+          <!---------Form--------->
+          <div id="form">
+            <form name="query_form" action="mailto:contact@cylonoholic.com?subject=Contact Ceylonoholic" method="post" enctype="text/plain">
+              <!-----name input--->
+              <div id="form_section_1">
+                <div class="Name">
+                  <label for="name">Name:</label><br />
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+
+                <!-----email input----->
+                <div class="email">
+                  <label for="email">Email:</label><br />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <br />
+
+                <!-------query theme select------->
+                <div class="subject_select">
+                  <label for="subject">Subject:</label><br />
+                  <select id="subject">
+                    <option value="">Select option..</option>
+                    <option value="Visa Enquiries">Visa Enquiries</option>
+                    <option value="Travel Guidence">Travel Guidence</option>
+                    <option value="Business Enquiries">Business Enquiries</option>
+                    <option value="Comment Regarding Website">Comment Regarding Website</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <!------country select-------->
+                <div class="region_select">
+                  <label for="region">Region:</label><br />
+                  <select id="region">
+                    <option value="">Select option..</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Asia Pacific">Asia Pacific</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Middle East">Middle East</option>
+                    <option value="Africa">Africa</option>
+                  </select>
+                </div>
+
+                <br />
+
+                <!--------comments textarea-------->
+                <div class="comments">
+                  <label for="comments">Any comments:</label><br />
+                  <textarea
+                    name="comments"
+                    id="comments"
+                    cols="30"
+                    rows="10"
+                    placeholder="Write your message here.."
+                  ></textarea>
+                </div>
+                <br />
+
+                <div class="form-btns">
+                  <button id="view_btn">View Query</button>
+                </div>
+              </div>
+              <!-------------Summery-------------->
+              <div id="form_summery" class="hide">
+                <div id="summery_msg"></div>
+                <div class="summery-btns">
+                  <button id="edit_btn">Edit</button>
+                  <input type="submit" id="submit_btn" value="Submit" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------footer---------->
+    <div class="footer">
+      <img src="imgs/logo.png" alt="" />
+      <div class="footer_details_container">
+        <div class="follow-us footer_details">
+          <h2>Social</h2>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+        </div>
+
+        <div class="view footer_details">
+          <h2>View More</h2>
+          <ul>
+            <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+            <li><a href="../Site_Map/Site_Map.html">Sitemap</a></li>
+            <li><a href="../store_page/store_page.html">Store</a></li>
+            <li><a href="../Quiz/startquiz.html">Quiz</a></li>
+          </ul>
+        </div>
+
+        <div class="about footer_details">
+          <h2>About Us</h2>
+          <ul>
+            <li><a href="../Aboutus/aboutus.html">Our Team</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-us footer_details">
+          <h2>Contact Us</h2>
+          <ul>
+            <li>Contact No : +94 173 453 8998</li>
+            <li>Email : contact@ceylonoholic.com</li>
+            <li>Address : No.22 Galle Road, Colombo 03</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <h3>
+        Created by <a href="../editors_page/rukshan.html">Rukshan Dias</a> | All Rights Reserved.
+      </h3>
+    </div>
+
+    <script defer src="querForm.js"></script>
+  </body>
+</html>

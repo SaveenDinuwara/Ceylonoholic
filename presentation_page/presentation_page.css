@@ -1,0 +1,33 @@
+.table-data{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+    background: linear-gradient(to right, #434e69, #3e85f7);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.main{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 40px;
+    margin: auto;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+}
+.logo{
+    height: 0%;
+    text-align: center;
+    margin-top: 60px;
+}   

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery</title>
+<link rel="stylesheet" href="gallery.css">
+<link rel="stylesheet" href="navigation_style.css">
+<link rel="stylesheet" href="footer.css">
+<script src="Gallery.js" >
+    document.getElementById("expandedImg").addEventListener("mouseover", myFunction(imgs));
+</script>  
+</head>
+<body>
+    <div class="navbar">
+        <!-----Logo---->
+        <div class="nav_logo">
+            <a href="../Home_page/main.html">
+                <img src="logo.png" alt="logo">
+            </a>
+
+        </div>
+        <!------Menu items-->
+        <div class="nav_select">
+          <ul class="nav_items">
+            <li><a href="../Home_page/main.html">Home</a></li>
+            <li><a href="../Quiz/startquiz.html">Quiz</a></li>
+            <li><a href="../store_page/store_page.html">Store</a></li>
+            <li><a href="../presentation_page/presentation_page.html">Presentation</a></li>
+            <li><a href="../Site_Map/Site_Map.html">Sitemap</a></li>
+            <li class="active"><a href="../Gallery/Gallery.html">Gallery</a></li>
+            <li><a href="../Aboutus/aboutus.html">About us</a></li>
+            <li class="nav_btn"><a href="../Query_form/queryForm.html">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+
+ <!--pull down menu-->
+
+<br>
+<div>
+    <form>
+ <span id="changeColor"  onclick="textcolor(this.value)">
+    <b>Background </b>
+    <select name="choose bgcolor" id="choose bgcolor" class = "combo-box" onchange="pagecolor(this.value)">
+        <option value="#16A085" selected>By Default</option>
+        <option value="black">Black</option>
+        <option value="#fff">White</option>
+        <option value="#008000">Green</option>
+        <option value="#FFFF00">Yellow</option>
+    </select>
+
+    <br>
+    <br>
+
+    <b>Text Colour</b>
+    <select name="choose txtcolor" id="choose txtcolor" class = "combo-box" onchange="textcolor(this.value)">
+    <option value="#fff">White</option>
+    <option value="black" selected>Black</option>
+    <option value="#1b0d85">Blue</option>
+    <option value="#75bff0">Light Blue</option>
+    <option value="#cea9cf">Pink</option>
+    </select>
+</span>
+</form>
+</div>
+<br><br>
+
+<span id = "h1" onchange="textcolor(this.value)">
+<h1>WildLife Gallery</h1>
+</span>
+
+
+<!-- Images -->
+<div id="all_thumbnails">
+    <img id="img1" class= "thumbnail" src="SriLankan_Elephant.jpg" onmouseover="myFunction(this)" onmouseenter="description_elephant()"/>
+    
+    
+    <img id="img2"  class="thumbnail" src="leopard.jpg" onmouseover="myFunction(this)" onmouseenter="description_leopard()"/>
+    
+    
+    <img id="img3"class="thumbnail"src="toque-macaque.jpg" onmouseover="myFunction(this)" onmouseenter="description_toque()"/>
+    
+    
+    <img id="img4" class="thumbnail" src="Sri_Lanka_Sloth_Bear.jpg" onmouseover="myFunction(this)" onmouseenter="description_bear()"/>
+    
+    
+    <img id="img5" class="thumbnail" src="sambar-deer.jpg" onmouseover="myFunction(this)" onmouseenter="description_deer()"/>
+</div>
+
+<div class="container"> 
+    <img id="expandedImg" class = "column first">
+
+    
+    <span id = "description" onchange="textcolor(this.value)"><h3> 
+Sri Lanka is somewhat of an outlier when it comes to biodiversity. Experts have been studying the biodiversity of this small island since the early 20th century, and all with good reason. The number of animal species in the island is said to be five times as much as it is supposed to be in an island of its size, and the number of endemic species in the country is amazing. From endemic birds to endemic primates, Sri Lanka has them all. The wonder of Sri Lanka – being such a small island – is that you don’t have to travel far to see any of them.
+    </span>
+    
+
+</div>
+  <!---------footer---------->
+  <div class="footer">
+    <img src="logo.png" alt="footer logo" />
+    <div class="footer_details_container">
+      <div class="follow-us footer_details">
+        <h2>Social</h2>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+      </div>
+
+      <div class="view footer_details">
+        <h2>View More</h2>
+        <ul>
+          <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+          <li><a href="../Site_Map/Site_Map.html">Sitemap</a></li>
+          <li><a href="../store_page/store_page.html">Store</a></li>
+          <li><a href="../Quiz/startquiz.html">Quiz</a></li>
+        </ul>
+      </div>
+
+      <div class="about footer_details">
+        <h2>About Us</h2>
+        <ul>
+          <li><a href="../Aboutus/aboutus.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-us footer_details">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Contact No : +94 173 453 8998</li>
+          <li>Email : contact@ceylonoholic.com</li>
+          <li>Address : No.22 Galle Road, Colombo 03</li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <h3>
+      &copy; 2022 Ceylonoholic | Created by <a href="../editors_page/saveen.html">Saveen Liyanage</a> | All Rights Reserved.
+    </h3>
+  </div>
+</body>
+</html>

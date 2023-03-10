@@ -1,0 +1,56 @@
+/*---footer section-----*/
+.footer{
+    width: 100%;
+    height: 23rem; /*height of footer*/
+    background-color: #008080;
+    padding: 7px 150px;
+}
+.footer img{
+    height:80px ;
+    width: 180px;
+    right: 20px;
+}
+.footer_details_container{
+    display: flex;
+}
+.footer_details{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+.footer_details h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(203, 198, 198);
+}
+.footer_details ul li{
+    list-style-type: none;/*remove bullet*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    line-height: 2.3rem;
+    color: #ffffff;
+}
+.footer_details ul li a{
+    text-decoration: none; /*remove underline*/  
+    color: #ffffff;
+}
+.footer_details ul li a:hover{
+    color: rgb(186, 186, 186);
+    transition: all 300ms ease-in-out;
+}
+.footer h3 a{
+    text-decoration: none;
+    color: #00dcdc;
+}
+.footer h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+}
+@media only screen and (max-width: 1430px){
+    .footer{
+        height: 27rem; /*changing the footer height when the screen size <= 1430px*/
+        width: 77.6%;
+    }
+}

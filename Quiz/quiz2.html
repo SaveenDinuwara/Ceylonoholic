@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/Quiz.css">
+        <link rel="stylesheet" href="Navigation_style.css">
+        <link rel="stylesheet" href="footer.css">
+        
+
+    </head>
+    <body>
+         <!---Navigation bar-->
+         <div class="navbar">
+            <!---Logo-->
+            <div class="nav_logo">
+                <a href="../Home_page/main.html">
+                    <img src="imgs/logo.png" alt="logo">
+                </a>
+    
+            </div>
+            <!---Menu items-->
+            <div class="nav_select">
+              <ul class="nav_items">
+                <li><a href="../Home_page/main.html">Home</a></li>
+                <li class="active"><a href="../Quiz/startquiz.html">Quiz</a></li>
+                <li><a href="../store_page/store_page.html">Store</a></li>
+                <li><a href="../presentation_page/presentation_page.html">Presentation</a></li>
+                <li><a href="../Site_Map/Site_Map.html">Sitemap</a></li>
+                <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+                <li><a href="../Aboutus/aboutus.html">About us</a></li>
+                <li class="nav_btn"><a href="../Query_form/queryForm.html">Contact</a></li>
+            </ul>
+            </div>
+    </div>
+<!---creating question box and add questions-->
+         <div class="main-box">
+                <div class="quizheader">
+                    <h2 class="quizname">CEYLONOHOLIC Quiz Challange</h2>
+                    <div class="timer">
+                        <div class="timertitle">
+                            Time Left
+                        </div>
+                        <div id="timer">
+                        </div>
+                    </div>
+                </div>
+                <div id="quiz">
+                <form name="form" class="form">
+                    <br><br><br>
+                    <div class='question1'>
+                        <p class="question">1. What is the currency of Sri Lanka?</p>
+                        <div class="option">
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q1" value="2" id="Rupee">
+                                <label id="correct1" for="Rupee" >Rupee</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q1" value="-1" id="Doller">
+                                <label for="Doller">Doller</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q1" value="-1" id="Rupiah">
+                                <label for="Rupiah">Rupiah</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q1" value="-1" id="Pound">
+                                <label for="Pound">Pound</label>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class='question2'>
+                        <p class="question">2. What is What is the commercial capital of Sri Lanka?</p>
+    
+                        <div class="option">
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q2" value="-1" id="Jaffna">
+                                <label for="Jaffna">Jaffna</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q2" value="-1" id="Anuradhapur">
+                                <label for="Anuradhapura">Anuradhapura</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q2" value="-1" id="Kand">
+                                <label for="Kandy">Kandy</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q2" value="2" id="Colombo">
+                                <label id="correct2" for="Colombo">Colombo</label>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class='question3'>
+                        <p class="question">3. How many districts are there in Sri Lanka?</p>
+    
+                        <div class="option">
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q3" value="-1" id="23">
+                                <label for="23">23</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q3" value="2" id="25">
+                                <label id="correct3" for="25">25</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q3" value="-1" id="28">
+                                <label for="28">28</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q3" value="-1" id="27">
+                                <label for="27">27</label>
+                            </div>
+                        </div>
+                    </div>
+             
+                    <div class='question4'>
+                        <p class="question">4. Which of the following is a commonly used nickname for the Sri Lanka?</p>
+          
+                        <div class="option">
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q4" value="-1" id="JeweloftheNile">
+                                <label for="JeweloftheNile">Jewel of the Nile</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q4" value="-1" id="TheDiamondoftheOrient">
+                                <label for="TheDiamondoftheOrient">The Diamond of the Orient</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q4" value="2" id="PearloftheIndianOcean">
+                                <label id="correct4" for="PearloftheIndianOcean">Pearl of the Indian Ocean</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q4" value="-1" id="RubyofthePacific">
+                                <label for="RubyofthePacific">Ruby of the Pacific</label>
+                            </div>
+                        </div>
+                    </div>
+             
+                    <div class='question5'>
+                        <p class="question">5. On which Sri Lankan rock palace fortress, with an entrance between the paws of a lion?</p>
+    
+                        <div class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q5" value="2" id="Sigiriya">
+                                <label id="correct5" for="Sigiriya">Sigiriya</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q5" value="-1" id="Polonnaruwa">
+                                <label  for="Polonnaruwa">Polonnaruwa</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q5" value="-1" id="Mihintale">
+                                <label for="Mihintale">Mihintale</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q5" value="-1" id="Anuradhapura">
+                                <label for="Anuradhapura">Anuradhapura</label>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class='question6'>
+                        <p class="question">6. Which one of the following activities can you NOT do during a trip to Sri Lanka?</p>
+    
+                        <div class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q6" value="-1" id="Whitewaterrafting">
+                                <label for="Whitewaterrafting">Whitewater rafting</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q6" value="-1" id="Hotairballoon">
+                                <label for="Hotairballoon">Hot air balloon rides</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q6" value="2" id="SnowSkiing">
+                                <label id="correct6" for="SnowSkiing">Snow Skiing</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q6" value="-1" id="Seadiving">
+                                <label for="Seadiving">Sea diving</label>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class='question7'>
+                        <p class="question">7. In which Sri Lankan city is the Esala Perahera festival held?</p>
+    
+                        <div class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q7" value="2" id="Kandy">
+                                <label id="correct7" for="Kandy">Kandy</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q7" value="-1" id="Colomb">
+                                <label for="Colomb">Colombo</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q7" value="-1" id="Ratnapura">
+                                <label for="Ratnapura">Ratnapura</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q7" value="-1" id="Galle">
+                                <label for="Galle">Galle</label>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class='question8'>
+                        <p class="question">8. Sri Lanka is known for exporting tea, coffee, rubber and cinnamon, but only one of them is native to the island. Which one?</p>
+    
+                        <div class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q8" value="-1" id="Rubber">
+                                <label for="Rubber">Rubber</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q8" value="-1" id="Tea">
+                                <label for="Tea">Tea</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q8" value="2" id="Cinnamon">
+                                <label id="correct8" for="Cinnamon">Cinnamon</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q8" value="-1" id="Coffee">
+                                <label for="Coffee">Coffee</label>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class='question9'>
+                        <p class="question">9. What is the tallest mountain in Sri Lanka?</p>
+    
+                        <div class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q9" value="-1" id="TheodoraHill">
+                                <label for="TheodoraHill">Theodora Hill</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q9" value="2" id="Pidurutalagala">
+                                <label id="correct9" for="Pidurutalagala">Pidurutalagala</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q9" value="-1" id="Adamspeak">
+                                <label for="Adamspeak">Adam's peak</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q9" value="-1" id="Namunukula">
+                                <label for="Namunukula">Namunukula</label>
+                            </div>
+                      </div>
+                    </div>
+            
+                    <div class='question10'>
+                        <p class="question">10. Who builled the  galle fort?</p>
+                        <div class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q10" value="2" id="Pourtugese">
+                                <label id="correct10" for="Pourtugese">Pourtugese</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q10" value="-1" id="British">
+                                <label for="British">British</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q10" value="-1" id="Dutch">
+                                <label for="Dutch">Dutch</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q10" value="-1" id="German">
+                                <label for="German">German</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input class="button" id="submitbtn" onClick="quizsubmit();this.disabled = true;" type="button" value="Submit">
+                    </div>
+                </form>
+             
+            </div>
+        </div>
+        <div class="finalresult">
+            <!---result box-->
+            <div id="resultbox" style="display: none;">
+                <div class="rtitle">
+                    <h3 id="rtext">You are completed the quiz!</h3>
+                    <br><p>Your results</p>
+                </div>
+    
+                <div class="qanswer" id="correctans1"></div>
+                <div class="qanswer" id="correctans2"></div>
+                <div class="qanswer" id="correctans3"></div>
+                <div class="qanswer" id="correctans4"></div>
+                <div class="qanswer" id="correctans5"></div>
+                <div class="qanswer" id="correctans6"></div>
+                <div class="qanswer" id="correctans7"></div>
+                <div class="qanswer" id="correctans8"></div>
+                <div class="qanswer" id="correctans9"></div>
+                <div class="qanswer" id="correctans10"></div>
+            
+                <!---display marks -->
+                <div class="marks">
+                    <h2 id="usermarks"></h2>
+                </div>
+         
+                <!---refresh the page-->
+                <input type="button" value="Try Again" onclick="location.reload();" class="button" id="resetButton">
+                
+    
+                <!---question button-->
+                
+                <input onclick="window.location.href='../Home_page/main.html';"  type="button" value="Home" class="button" id="show">
+          
+            </div>
+        </div>
+    
+
+        <br><br><br><br>
+<!---footer-->
+<div class="footer">
+    <img src="imgs/logo.png" alt="footer logo" />
+    <div class="footer_details_container">
+      <div class="follow-us footer_details">
+        <h2>Social</h2>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+      </div>
+
+      <div class="view footer_details">
+        <h2>View More</h2>
+        <ul>
+          <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+          <li><a href="../Site_Map/Site_Map.html">Sitemap</a></li>
+          <li><a href="../store_page/store_page.html">Store</a></li>
+          <li><a href="../Quiz/startquiz.html">Quiz</a></li>
+        </ul>
+      </div>
+
+      <div class="about footer_details">
+        <h2>About Us</h2>
+        <ul>
+          <li><a href="../Aboutus/aboutus.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-us footer_details">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Contact No : +94 173 453 8998</li>
+          <li>Email : contact@ceylonoholic.com</li>
+          <li>Address : No.22 Galle Road, Colombo 03</li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <h3>
+      &copy; 2022 Ceylonoholic | Created by <a href="../editors_page/ravindu.html">Ravindu Premasiri</a> | All Rights Reserved.
+    </h3>
+  </div>
+
+        <script src="Js/quiz.js"></script>
+    </body>
+            
+   
+
+</html>

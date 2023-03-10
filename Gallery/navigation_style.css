@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    position: relative;
+    height: 10px;/*height of the navbar*/
+    padding: 30px;
+    background-color: #008080;
+}
+.nav_logo {
+    position: absolute;
+    bottom: -12px;
+}
+.nav_logo img{
+    position: relative;
+    height:80px ;
+    width: 180px;
+    left: 10px;
+}
+.nav_select{
+    position: absolute;
+    top: 20px;
+    left: 25em;
+    width: 70%;
+    
+}
+.nav_items li{
+    display: inline;/*display as row*/
+    padding: 20px;
+    margin: 0 20px 0 0;/*adding margin right*/
+}
+.nav_select a{
+    text-decoration: none;/*removing underline*/
+    color: #fff;
+    font: 14px Helvetica;
+    font-weight: bold;
+
+}
+.nav_items li:last-child{/*last element of li tags*/
+    background: linear-gradient(to right, #48D1CC, #129aa3);
+    border-radius: 15px 50px;
+    padding: 12px 46px;
+    margin-left:8%;
+}
+.nav_items li:last-child:hover{
+    border-radius: 50px 15px;
+    transition: all 200ms ease-in-out;
+}
+.nav_items li.active a{/*the web page user in/clicked*/
+    color: #00ecec;
+    font-size: 16px;
+}
+.nav_items li a:hover{
+    color: black;
+    transition: all 400ms ease-in-out;
+}
+/*responsive*/
+@media only screen and (max-width: 1520px){
+    /*editing the navigation*/
+    .nav_select{
+        width: 60%; /*changing the width when the screen size <= 1520px*/
+    }
+    .nav_items li{
+        margin: 0 10px 0 0;
+        padding: 20px 15px;
+    }
+    .nav_items li:last-child{
+        margin-left: 50px;
+        padding: 8px 25px;
+    }
+
+}
+
+@media only screen and (max-width: 1350px){
+    /*editing the navigation*/
+    .nav_select{
+        width: 60%; 
+    }
+    .nav_items li{
+        margin: 0 10px 0 0;
+        padding: 20px 10px;
+    }
+    .nav_items li:last-child{
+        margin-left: 10px;/*changing the margin-left when the screen size <= 1350px*/
+        padding: 8px 25px;
+    }
+
+}
